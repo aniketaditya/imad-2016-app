@@ -1,17 +1,162 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-    <head>
-        <link href="/ui/style.css" rel="stylesheet" />
-    </head>
-    <body>
-        <div class="center">
-            <img src="/ui/madi.png" class="img-medium"/>
+<title>Profile | Aniket Aditya</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style1.css">
+<body class="content" style="max-width:1300px">
+
+<!-- First Grid: Logo & About -->
+<div class="row">
+  <div class="half black container center" style="height:700px">
+    <div class="padding-64">
+      <h1><marquee>wElCoMe tO mY pRoFiLe!</marquee></h1>
+    </div>
+    <div class="padding-64">
+      <a href="#" class="btn btn-block hover-blue-grey padding-16">Home</a>
+      <a href="#work" class="btn btn-block hover-teal padding-16">Gallery</a>
+      <a href="#work" class="btn btn-block hover-dark-grey padding-16">Flashback</a>
+      <a href="#contact" class="btn btn-block hover-brown padding-16">Contact</a>
+    </div>
+  </div>
+  <div class="half blue-grey container" style="height:700px">
+    <div class="padding-64 center">
+      <h1>About Me</h1>
+      <img src="images/profilepic.jpg" class="margin circle" alt="Person" style="width:40%">
+      <div class="left-align padding-xxsmall">
+        <p>Hello Everyone! I'm Aniket Aditya. A passionate web developer and programmer. I love to design and develop interactive websites and also help others build their own. I would describe myself to be a smart workoholic person, with tons of positive attitude and constantly ready to take up challenges.</p>
+        <p>Listening to retro bollywood songs, hanging out with friends and playing billiards are some of my hobbies apart from coding. Getting the concepts quickly and keeping a learning attitude are my strengths. Although I'm too lazy to do things on time and I consider this as my biggest weakness. </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Second Grid: Work & Resume -->
+<div class="row">
+  <div class="half light-grey center" style="min-height:800px" id="work">
+    <div class="padding-64">
+      <h2>Photo Gallery</h2>
+    </div>
+    <div class="row">
+      <div class="half">
+        <img src="images/pic1.jpg" style="width:70%">
+      </div>
+      <div class="half">
+        <img src="images/pic2.jpg" style="width:70%">
+      </div>
+    </div>
+    <div class="row hide-small">
+      <div class="half">
+        <img src="images/pic3.jpg" style="width:70%">
+      </div>
+      <div class="half">
+        <img src="images/pic4.jpg" style="width:70%">
+      </div>
+    </div>
+
+    <div class="row hide-small">
+      <div class="half">
+        <img src="images/pic5.jpg" style="width:70%">
+      </div>
+      <div class="half">
+        <img src="images/pic6.jpg" style="width:70%">
+      </div>
+    </div><br>
+    <p>Just call me awesome.</p>
+  </div>
+  <div class="half indigo container" style="min-height:1000px">
+    <div class="padding-64 center">
+      <h2>Flashback</h2>
+      <p>I expect you not to consider it as my CV :D</p>
+      <div class="container responsive">
+        <table class="table">
+          <tr>
+            <th>Year</th>
+            <th>Title</th>
+            <th>Where</th>
+          </tr>
+          <tr class="white">
+            <td>2013-2017</td>
+            <td>Getting graduate</td>
+            <td>Hyderabad,India</td>
+          </tr>
+          <tr>
+            <td>2015</td>
+            <td>Started learning PHP and Web Development</td>
+            <td>New Delhi,India</td>
+          </tr>
+          <tr class="white">
+            <td>2013</td>
+            <td>Started learning programming</td>
+            <td>Hyderabad,India</td>
+          </tr>
+          <tr>
+            <td>2011-2013</td>
+            <td>Did my High Schooling</td>
+            <td>Kota,India</td>
+          </tr>
+          <tr class="white">
+            <td>1996-2011</td>
+            <td>Busy Growing Up</td>
+            <td>Home</td>
+          </tr>
+          <tr class="hide-medium">
+            <td>1996</td>
+            <td>First Cry</td>
+            <td>Landed on Earth</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Third Grid: Swing By & Contact -->
+<div class="row" id="contact">
+  <div class="half dark-grey container center" style="height:700px">
+    <div class="padding-64">
+      <h1>Swing By</h1>
+    </div>
+    <div class="padding-64">
+      <p>..for a cup of coffee, or whatever.</p>
+      <p>Hyderabad, India</p>
+      <p>+91 8121751169</p>
+      <a href="https://www.facebook.com/aniket.aditya">
+      <img src="images/fb-logo.png" width="50" height="50" alt="fb"></a>
+      <a href="https://twitter.com/aniket_aditya">
+      <img src="images/twitter-logo.png" width="50" height="50" alt="twitter"></a>
+      <a href="https://www.instagram.com/aniketaditya/">
+      <img src="images/insta-logo.jpg" width="50" height="50" alt="insta">
+    </a>
+    </div>
+  </div>
+  <div class="half teal container" style="height:700px">
+    <div class="padding-64 padding-xxlarge">
+      <h1>Contact</h1>
+      <p class="opacity">GET IN TOUCH</p>
+      <form class="container card-2 padding-32 white">
+        <div class="group">
+          <label>Name</label>
+          <input class="input" style="width:100%;" type="text" required>
         </div>
-        <br>
-        <div class="center text-big bold">
-           <h4> Hi! i'm Aniket and this is my first webapp</h4>
+        <div class="group">
+          <label>Name</label>
+          <input class="input" style="width:100%;" type="text" required>
         </div>
-        <script type="text/javascript" src="/ui/main.js">
-        </script>
-    </body>
+        <div class="group">
+          <label>Subject</label>
+          <input class="input" style="width:100%;" type="text" required>
+        </div>
+        <button type="button" class="btn right theme">Send</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="container black padding-16">
+  <p>Copyright © 2016 Aniket Aditya</p>
+</footer>
+
+</body>
 </html>
+
