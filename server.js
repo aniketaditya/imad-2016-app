@@ -32,7 +32,7 @@ app.get('/ui/pic3.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'pic3.jpg'));
 });
 app.get('/ui/pic4.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui/images', 'pic4.jpg'));
+  res.sendFile(path.join(__dirname, 'ui', 'pic4.jpg'));
 });
 app.get('/ui/pic5.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'pic5.jpg'));
