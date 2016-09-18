@@ -13,34 +13,34 @@ app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 
-app.get('/ui/fb-logo.png', function (req, res) {
+app.get('/ui/images/fb-logo.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'fb-logo.png'));
 });
-app.get('/ui/insta-logo.jpg', function (req, res) {
+app.get('/ui/images/insta-logo.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'insta-logo.jpg'));
 });
-app.get('/ui/twitter-logo.png', function (req, res) {
+app.get('/ui/images/twitter-logo.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'twitter-logo.png'));
 });
-app.get('/ui/pic1.jpg', function (req, res) {
+app.get('/ui/images/pic1.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'pic1.jpg'));
 });
-app.get('/ui/pic2.jpg', function (req, res) {
+app.get('/ui/images/pic2.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'pic2.jpg'));
 });
-app.get('/ui/pic3.jpg', function (req, res) {
+app.get('/ui/images/pic3.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'pic3.jpg'));
 });
-app.get('/ui/pic4.jpg', function (req, res) {
+app.get('/ui/images/pic4.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'pic4.jpg'));
 });
-app.get('/ui/pic5.jpg', function (req, res) {
+app.get('/ui/images/pic5.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'pic5.jpg'));
 });
-app.get('/ui/pic6.jpg', function (req, res) {
+app.get('/ui/images/pic6.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'pic6.jpg'));
 });
-app.get('/ui/profilepic.jpg', function (req, res) {
+app.get('/ui/images/profilepic.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'profilepic.jpg'));
 });
 
