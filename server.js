@@ -100,13 +100,6 @@ app.get('/vendor/font-awesome/fonts/fontawesome-webfont.ttf', function (req, res
   res.sendFile(path.join(__dirname, 'ui/vendor/font-awesome/fonts' , 'fontawesome-webfont.ttf'));
 });
 
-app.get('/vendor/font-awesome/fonts/fontawesome-webfont.woff', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui/vendor/font-awesome/fonts' , 'fontawesome-webfont.woff'));
-});
-
-app.get('/vendor/font-awesome/fonts/fontawesome-webfont.woff2', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui/vendor/font-awesome/fonts' , 'fontawesome-webfont.woff2'));
-});
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
 app.listen(8080, function () {
