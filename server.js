@@ -84,13 +84,6 @@ app.get('/img/contact_me.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui/img', 'contact_me.jpg'));
 });
 
-app.get('/vendor/font-awesome/fonts/FontAwesome.otf', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui/vendor/font-awesome/fonts' , 'FontAwesome.otf'));
-});
-
-app.get('/vendor/font-awesome/fonts/fontawesome-webfont.eot', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui/vendor/font-awesome/fonts' , 'fontawesome-webfont.eot'));
-});
 
 app.get('/vendor/font-awesome/fonts/fontawesome-webfont.svg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui/vendor/font-awesome/fonts' , 'fontawesome-webfont.svg'));
