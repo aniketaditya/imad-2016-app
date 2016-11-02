@@ -3,12 +3,12 @@ var morgan = require('morgan');
 var path = require('path');
 var Pool = require('pg').Pool;
 var config = {
-    user = 'aniketaditya',
-    database = 'aniketaditya',
-    host = 'db.imad.hasura-app.io',
-    port = '5432',
-    password = process.env.DB_PASSWORD
-}
+    user : 'aniketaditya',
+    database : 'aniketaditya',
+    host : 'db.imad.hasura-app.io',
+    port : '5432',
+    password : process.env.DB_PASSWORD
+};
 
 var app = express();
 app.use(morgan('combined'));
@@ -20,10 +20,10 @@ function createTemplate (data) {
     var heading = data.heading;
     var author = data.author;
     var content = data.content;
-    var htmlTemplate = 
+    var htmlTemplate = `
     <html lang="en">
 
-<head>
+    <head>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -171,6 +171,7 @@ function createTemplate (data) {
 </body>
 
 </html>
+`;
 }
 
 app.get('/', function (req, res) {
