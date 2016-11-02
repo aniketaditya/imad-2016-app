@@ -1,162 +1,196 @@
-<!DOCTYPE html>
-<html>
-<title>Profile | Aniket Aditya</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="/ui/style.css">
-<body class="content" style="max-width:1300px">
 
-<!-- First Grid: Logo & About -->
-<div class="row">
-  <div class="half black container center" style="height:700px">
-    <div class="padding-64">
-      <h1><marquee>wElCoMe tO mY pRoFiLe!</marquee></h1>
-    </div>
-    <div class="padding-64">
-      <a href="#" class="btn btn-block hover-blue-grey padding-16">Home</a>
-      <a href="#work" class="btn btn-block hover-teal padding-16">Gallery</a>
-      <a href="#work" class="btn btn-block hover-dark-grey padding-16">Flashback</a>
-      <a href="#contact" class="btn btn-block hover-brown padding-16">Contact</a>
-    </div>
-  </div>
-  <div class="half blue-grey container" style="height:700px">
-    <div class="padding-64 center">
-      <h1>About Me</h1>
-      <img src="/ui/profilepic.jpg" class="margin circle" alt="Person" style="width:40%">
-      <div class="left-align padding-xxsmall">
-        <p>Hello Everyone! I'm Aniket Aditya. A passionate web developer and programmer. I love to design and develop interactive websites and also help others build their own. I would describe myself to be a smart workoholic person, with tons of positive attitude and constantly ready to take up challenges.</p>
-        <p>Listening to retro bollywood songs, hanging out with friends and playing billiards are some of my hobbies apart from coding. Getting the concepts quickly and keeping a learning attitude are my strengths. Although I'm too lazy to do things on time and I consider this as my biggest weakness. </p>
-      </div>
-    </div>
-  </div>
-</div>
+<html lang="en">
+<head>
 
-<!-- Second Grid: Work & Resume -->
-<div class="row">
-  <div class="half light-grey center" style="min-height:800px" id="work">
-    <div class="padding-64">
-      <h2>Photo Gallery</h2>
-    </div>
-    <div class="row">
-      <div class="half">
-        <img src="/ui/pic1.jpg" style="width:50%">
-      </div>
-      <div class="half">
-        <img src="/ui/pic2.jpg" style="width:50%">
-      </div>
-    </div>
-    <div class="row hide-small">
-      <div class="half">
-        <img src="/ui/pic3.jpg" style="width:50%">
-      </div>
-      <div class="half">
-        <img src="/ui/pic4.jpg" style="width:50%">
-      </div>
-    </div>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <div class="row hide-small">
-      <div class="half">
-        <img src="/ui/pic5.jpg" style="width:50%">
-      </div>
-      <div class="half">
-        <img src="/ui/pic6.jpg" style="width:50%">
-      </div>
-    </div><br>
-    <p>Just call me awesome.</p>
-  </div>
-  <div class="half indigo container" style="min-height:1000px">
-    <div class="padding-64 center">
-      <h2>Flashback</h2>
-      <p>I expect you not to consider it as my CV :D</p>
-      <div class="container responsive">
-        <table class="table">
-          <tr>
-            <th>Year</th>
-            <th>Title</th>
-            <th>Where</th>
-          </tr>
-          <tr class="white">
-            <td>2013-2017</td>
-            <td>Getting graduate</td>
-            <td>Hyderabad,India</td>
-          </tr>
-          <tr>
-            <td>2015</td>
-            <td>Started learning PHP and Web Development</td>
-            <td>New Delhi,India</td>
-          </tr>
-          <tr class="white">
-            <td>2013</td>
-            <td>Started learning programming</td>
-            <td>Hyderabad,India</td>
-          </tr>
-          <tr>
-            <td>2011-2013</td>
-            <td>Did my High Schooling</td>
-            <td>Kota,India</td>
-          </tr>
-          <tr class="white">
-            <td>1996-2011</td>
-            <td>Busy Growing Up</td>
-            <td>Home</td>
-          </tr>
-          <tr class="hide-medium">
-            <td>1996</td>
-            <td>First Cry</td>
-            <td>Landed on Earth</td>
-          </tr>
-        </table>
-      </div>
-    </div>
-  </div>
-</div>
+    <title>My Blog</title>
 
-<!-- Third Grid: Swing By & Contact -->
-<div class="row" id="contact">
-  <div class="half dark-grey container center" style="height:700px">
-    <div class="padding-64">
-      <h1>Swing By</h1>
-    </div>
-    <div class="padding-64">
-      <p>..for a cup of coffee, or whatever.</p>
-      <p>Hyderabad, India</p>
-      <p>+91 8121751169</p>
-      <a href="https://www.facebook.com/aniket.aditya">
-      <img src="/ui/fb-logo.png" width="50" height="50" alt="fb"></a>
-      <a href="https://twitter.com/aniket_aditya">
-      <img src="/ui/twitter-logo.png" width="50" height="50" alt="twitter"></a>
-      <a href="https://www.instagram.com/aniketaditya/">
-      <img src="/ui/insta-logo.jpg" width="50" height="50" alt="insta">
-    </a>
-    </div>
-  </div>
-  <div class="half teal container" style="height:700px">
-    <div class="padding-64 padding-xxlarge">
-      <h1>Contact</h1>
-      <p class="opacity">GET IN TOUCH</p>
-      <form class="container card-2 padding-32 white">
-        <div class="group">
-          <label>Name</label>
-          <input class="input" style="width:100%;" type="text" required>
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="css/my-blog.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="index.html">My Blog</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="post1.html">Sample Post</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
         </div>
-        <div class="group">
-          <label>Name</label>
-          <input class="input" style="width:100%;" type="text" required>
-        </div>
-        <div class="group">
-          <label>Subject</label>
-          <input class="input" style="width:100%;" type="text" required>
-        </div>
-        <button type="button" class="btn right theme">Send</button>
-      </form>
-    </div>
-  </div>
-</div>
+        <!-- /.container -->
+    </nav>
 
-<!-- Footer -->
-<footer class="container black padding-16">
-  <p>Copyright © 2016 Aniket Aditya</p>
-</footer>
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header class="intro-header" style="background-image: url('img/home-bg.jpg')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="site-heading">
+                        <h1>My Blog</h1>
+                        <hr class="small">
+                        <span class="subheading">A Clean Blog By Aniket Aditya</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-preview">
+                    <a href="post1.html">
+                        <h2 class="post-title">
+                            Article 1 Title
+                        </h2>
+                        <h3 class="post-subtitle">
+                            Article 1 subtitle
+                        </h3>
+                    </a>
+                    <p class="post-meta">Posted by <a href="#">Author</a> on Date</p>
+                </div>
+                <hr>
+                <div class="post-preview">
+                    <a href="post2.html">
+                        <h2 class="post-title">
+                            Article 2 Title
+                        </h2>
+                        <h3 class="post-subtitle">
+                            Article 2 subtitle
+                        </h3>
+                    </a>
+                    <p class="post-meta">Posted by <a href="#">Author</a> on Date</p>
+                </div>
+                <hr>
+                <div class="post-preview">
+                    <a href="post3.html">
+                        <h2 class="post-title">
+                            Article 3 Title
+                        </h2>
+                        <h3 class="post-subtitle">
+                            Article 3 subtitle
+                        </h3>
+                    </a>
+                    <p class="post-meta">Posted by <a href="#">Author</a> on Date</p>
+                </div>
+                <hr>
+                <div class="post-preview">
+                    <a href="post4.html">
+                        <h2 class="post-title">
+                            Article 4 Title
+                        </h2>
+                        <h3 class="post-subtitle">
+                            Article 4 subtitle
+                        </h3>
+                    </a>
+                    <p class="post-meta">Posted by <a href="#">Author</a> on Date</p>
+                    <hr>
+                <div class="post-preview">
+                    <a href="post5.html">
+                        <h2 class="post-title">
+                            Article 5 Title
+                        </h2>
+                        <h3 class="post-subtitle">
+                            Article 5 subtitle
+                        </h3>
+                    </a>
+                    <p class="post-meta">Posted by <a href="#">Author</a> on Date</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <ul class="list-inline text-center">
+                        <li>
+                            <a href="https://twitter.com/aniket_aditya">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/aniket.aditya">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/aniketaditya">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted">Copyright &copy; Aniket Aditya 2016</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/my-blog.js"></script>
 
 </body>
-</html>
 
+</html>
