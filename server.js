@@ -84,26 +84,6 @@ app.get('/img/contact_me.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui/img', 'contact_me.jpg'));
 });
 
-app.get('/vendor/bootstrap/fonts/glyphicons-halflings-regular.svg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui/vendor/bootstrap/fonts' , 'glyphicons-halflings-regular.svg'));
-});
-
-app.get('/vendor/bootstrap/fonts/glyphicons-halflings-regular.eot', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui/vendor/bootstrap/fonts' , 'glyphicons-halflings-regular.eot'));
-});
-
-app.get('/vendor/bootstrap/fonts/glyphicons-halflings-regular.ttf', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui/vendor/bootstrap/fonts' , 'glyphicons-halflings-regular.ttf'));
-});
-
-app.get('/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui/vendor/bootstrap/fonts' , 'glyphicons-halflings-regular.woff'));
-});
-
-app.get('/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff2', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui/vendor/bootstrap/fonts' , 'glyphicons-halflings-regular.woff2'));
-});
-
 app.get('/vendor/font-awesome/fonts/FontAwesome.otf', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui/vendor/font-awesome/fonts' , 'FontAwesome.otf'));
 });
