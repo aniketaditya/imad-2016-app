@@ -32,6 +32,10 @@ app.get('/js/contact_me.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui/js', 'contact_me.js'));
 });
 
+app.get('/mail/contact_me.php', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui/mail', 'contact_me.php'));
+});
+
 app.get('/js/jqBootstrapValidation.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui/js', 'jqBootstrapValidation.js'));
 });
