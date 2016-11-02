@@ -85,10 +85,6 @@ app.get('/img/contact_me.jpg', function (req, res) {
 });
 
 
-app.get('/vendor/font-awesome/fonts/fontawesome-webfont.svg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui/vendor/font-awesome/fonts' , 'fontawesome-webfont.svg'));
-});
-
 app.get('/vendor/font-awesome/fonts/fontawesome-webfont.ttf', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui/vendor/font-awesome/fonts' , 'fontawesome-webfont.ttf'));
 });
