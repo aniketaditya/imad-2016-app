@@ -88,6 +88,10 @@ app.get('/vendor/bootstrap/fonts/glyphicons-halflings-regular.ttf', function (re
   res.sendFile(path.join(__dirname, 'ui/vendor/bootstrap/fonts/', 'glyphicons-halflings.ttf'));
 });
 
+app.get('/vendor/bootstrap/fonts/glyphicons-halflings-regular.svg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui/vendor/bootstrap/fonts/', 'glyphicons-halflings.svg'));
+});
+
 app.get('/vendor/font-awesome/fonts/fontawesome-webfont.ttf', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui/vendor/font-awesome/fonts' , 'fontawesome-webfont.ttf'));
 });
