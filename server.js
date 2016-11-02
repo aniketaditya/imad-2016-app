@@ -17,7 +17,7 @@ app.get('/contact.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'contact.html'));
 });
 
-app.get('/post.html', function (req, res) {
+app.get('/post1.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'post.html'));
 });
 
