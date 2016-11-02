@@ -25,41 +25,33 @@ app.get('/css/my-blog.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui/css', 'my-blog.css'));
 });
 
-app.get('/ui/style.css', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'style.css'));
+app.get('/js/contact_me.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui/js', 'contact_me.js'));
 });
 
-app.get('/ui/fb-logo.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'fb-logo.png'));
-});
-app.get('/ui/insta-logo.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'insta-logo.jpg'));
-});
-app.get('/ui/twitter-logo.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'twitter-logo.png'));
-});
-app.get('/ui/pic1.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'pic1.jpg'));
-});
-app.get('/ui/pic2.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'pic2.jpg'));
-});
-app.get('/ui/pic3.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'pic3.jpg'));
-});
-app.get('/ui/pic4.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'pic4.jpg'));
-});
-app.get('/ui/pic5.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'pic5.jpg'));
-});
-app.get('/ui/pic6.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'pic6.jpg'));
-});
-app.get('/ui/profilepic.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'profilepic.jpg'));
+app.get('/js/jqBootstrapValidation.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui/js', 'jqBootstrapValidation.js'));
 });
 
+app.get('/js/my-blog.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui/js', 'my-blog.js'));
+});
+
+app.get('/vendor/bootstrap/css/bootstrap.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui/vendor/bootstrap/css', 'bootstrap.css'));
+});
+
+app.get('/vendor/bootstrap/js/bootstrap.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui/bootstrap/js', 'bootstap.js'));
+});
+
+app.get('/vendor/font-awesome/css/font-awesome.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui/vendor/font-awesome/css', 'font-awesome.css'));
+});
+
+app.get('/vendor/jquery/jquery.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui/vendor/jquery', 'jquery.js'));
+});
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
 app.listen(8080, function () {
