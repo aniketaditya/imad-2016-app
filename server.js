@@ -104,24 +104,24 @@ app.get('/vendor/font-awesome/fonts/FontAwesome.otf', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui/vendor/font-awesome/fonts' , 'FontAwesome.otf'));
 });
 
-app.get('/vendor/font-awesome/fonts/fontawesome.eot', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui/vendor/font-awesome/fonts' , 'fontawesome.eot'));
+app.get('/vendor/font-awesome/fonts/fontawesome-webfont.eot', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui/vendor/font-awesome/fonts' , 'fontawesome-webfont.eot'));
 });
 
-app.get('/vendor/font-awesome/fonts/fontawesome.svg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui/vendor/font-awesome/fonts' , 'fontawesome.svg'));
+app.get('/vendor/font-awesome/fonts/fontawesome-webfont.svg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui/vendor/font-awesome/fonts' , 'fontawesome-webfont.svg'));
 });
 
-app.get('/vendor/font-awesome/fonts/fontawesome.ttf', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui/vendor/font-awesome/fonts' , 'fontawesome.ttf'));
+app.get('/vendor/font-awesome/fonts/fontawesome-webfont.ttf', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui/vendor/font-awesome/fonts' , 'fontawesome-webfont.ttf'));
 });
 
-app.get('/vendor/font-awesome/fonts/fontawesome.woff', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui/vendor/font-awesome/fonts' , 'fontawesome.woff'));
+app.get('/vendor/font-awesome/fonts/fontawesome-webfont.woff', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui/vendor/font-awesome/fonts' , 'fontawesome-webfont.woff'));
 });
 
-app.get('/vendor/font-awesome/fonts/fontawesome.woff2', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui/vendor/font-awesome/fonts' , 'fontawesome.woff2'));
+app.get('/vendor/font-awesome/fonts/fontawesome-webfont.woff2', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui/vendor/font-awesome/fonts' , 'fontawesome-webfont.woff2'));
 });
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
