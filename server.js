@@ -312,7 +312,7 @@ var htmlTemplate2 = `
                             Article 5 subtitle
                         </h3>
                     </a>
-                    <p class="post-meta">Posted by <a href="#">${author}</a> on ${date.toDateString}</p>
+                    <p class="post-meta">Posted by <a href="#">${author}</a> on ${date.toDateString()}</p>
                 </div>
             </div>
         </div>
