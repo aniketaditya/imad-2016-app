@@ -14,7 +14,7 @@ var app = express();
 app.use(morgan('combined'));
 var path = require('path');
 
-app.use(express.static(path.join(__dirname, 'ui')));
+app.use(express.static(__dirname + '/ui'));
 
 function createTemplate (data) {
     var title = data.title;
@@ -38,13 +38,13 @@ function createTemplate (data) {
     </title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="/ui/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
 
     <!-- Theme CSS -->
-    <link href="/ui/css/my-blog.css" rel="stylesheet">
+    <link href="/css/my-blog.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="ui/vendor/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="/vendor/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
@@ -160,17 +160,17 @@ function createTemplate (data) {
     </footer>
 
     <!-- jQuery -->
-    <script src="ui/vendor/jquery/jquery.js"></script>
+    <script src="/vendor/jquery/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="ui/vendor/bootstrap/js/bootstrap.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.js"></script>
 
     <!-- Contact Form JavaScript -->
-    <script src="ui/js/jqBootstrapValidation.js"></script>
-    <script src="ui/js/contact_me.js"></script>
+    <script src="/js/jqBootstrapValidation.js"></script>
+    <script src="/js/contact_me.js"></script>
 
     <!-- Theme JavaScript -->
-    <script src="ui/js/my-blog.min.js"></script>
+    <script src="/js/my-blog.min.js"></script>
 
 </body>
 
