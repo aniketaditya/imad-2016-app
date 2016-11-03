@@ -198,12 +198,18 @@ app.get('/articles/:articleName',function (req,res) {
     } else {
         if(result.rows.length === 0)
         {
+            if(req.params.articleName === about.html || contact.html || css/my-blog.css || js/contact_me.js || mail/contact_me.php || js/jqBootstrapValidation.js || js/my-blog.js || vendor/bootstrap/css/bootstrap.css || vendor/bootstrap/js/bootstrap.js || vendor/font-awesome/css/font-awesome.css || vendor/jquery/jquery.js || img/about-bg.jpg || img/contact.jpg || img/home-bg.jpg || img/image.jpg || img/technology.jpg || img/contact_me.jpg || vendor/bootstrap/fonts/glyphicons-halflings-regular.ttf || vendor/bootstrap/fonts/glyphicons-halflings-regular.svg || vendor/font-awesome/fonts/fontawesome-webfont.ttf || vendor/font-awesome/fonts/fontawesome-webfont.woff || vendor/font-awesome/fonts/fontawesome-webfont.woff2) {
+                res.send(req.params.articleName);
+            }
+             else{
+            
             res.status(404).send('Article not found');
-        } else {
+            } 
+            }else {
             var articleData = result.rows[0];
             res.send(createTemplate(articleData));
+            }
         }
-    }
     });
 });
 
@@ -290,7 +296,7 @@ app.get('/vendor/font-awesome/fonts/fontawesome-webfont.ttf', function (req, res
 app.get('/vendor/font-awesome/fonts/fontawesome-webfont.woff', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui/vendor/font-awesome/fonts' , 'fontawesome-webfont.woff'));
 });
-  app.get('/vendor/font-awesome/fonts/fontawesome-webfont.woff', function (req, res) {
+  app.get('/vendor/font-awesome/fonts/fontawesome-webfont.woff2', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui/vendor/font-awesome/fonts' , 'fontawesome-webfont.woff2'));
 });
 
