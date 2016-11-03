@@ -199,7 +199,7 @@ app.get('/articles/:articleName',function (req,res) {
         if(result.rows.length === 0)
         {
             if(req.params.articleName === about.html || contact.html || css/my-blog.css || js/contact_me.js || mail/contact_me.php || js/jqBootstrapValidation.js || js/my-blog.js || vendor/bootstrap/css/bootstrap.css || vendor/bootstrap/js/bootstrap.js || vendor/font-awesome/css/font-awesome.css || vendor/jquery/jquery.js || img/about-bg.jpg || img/contact.jpg || img/home-bg.jpg || img/image.jpg || img/technology.jpg || img/contact_me.jpg || vendor/bootstrap/fonts/glyphicons-halflings-regular.ttf || vendor/bootstrap/fonts/glyphicons-halflings-regular.svg || vendor/font-awesome/fonts/fontawesome-webfont.ttf || vendor/font-awesome/fonts/fontawesome-webfont.woff || vendor/font-awesome/fonts/fontawesome-webfont.woff2) {
-                res.send(req.params.articleName);
+                res.sendFile(path.join(__dirname, 'ui', req.params.articleName));
             }
              else{
             
