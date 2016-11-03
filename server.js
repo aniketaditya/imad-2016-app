@@ -376,6 +376,7 @@ var htmlTemplate2 = `
 
 </html>
 `;
+return htmlTemplate2;
 }
 
 app.get('/', function (req, res) {
