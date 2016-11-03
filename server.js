@@ -102,7 +102,7 @@ function createTemplate (data) {
                     <div class="post-heading">
                         <h1>${heading}</h1>
                         <h2 class="subheading">${subtitle}</h2>
-                        <span class="meta">Posted by <a href="#">${author}</a> on ${date.toDateString()}</span>
+                        <span class="meta">Posted by  <a href="#">${author}</a> on ${date.toDateString()}</span>
                     </div>
                 </div>
             </div>
