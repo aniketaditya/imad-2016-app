@@ -375,7 +375,7 @@ var htmlTemplate2 = `
 </body>
 
 </html>
-
+`;
 }
 
 app.get('/', function (req, res) {
