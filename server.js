@@ -183,6 +183,10 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
+app.get('articles/index.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+});
+
 app.get('/articles/about.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'about.html'));
 });
