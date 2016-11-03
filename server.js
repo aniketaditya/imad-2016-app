@@ -183,9 +183,8 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/articles/:path', function (req, res) {
-    res.send(req.params.path);
-});
+
+
 
 var pool = new Pool(config);
 app.get('/index.html', function (req, res) {
