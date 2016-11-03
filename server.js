@@ -12,6 +12,9 @@ var config = {
 
 var app = express();
 app.use(morgan('combined'));
+var path = require('path');
+
+app.use(express.static(path.join(__dirname, 'ui')));
 
 function createTemplate (data) {
     var title = data.title;
@@ -35,10 +38,10 @@ function createTemplate (data) {
     </title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="/ui/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
 
     <!-- Theme CSS -->
-    <link href="ui/css/my-blog.css" rel="stylesheet">
+    <link href="/ui/css/my-blog.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="ui/vendor/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
