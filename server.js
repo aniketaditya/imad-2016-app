@@ -176,7 +176,6 @@ function createTemplate (data) {
 
 </html>
 `;
-return htmlTemplate1;
 var htmlTemplate2 = `
 <!DOCTYPE html>
 <html lang="en">
@@ -376,7 +375,7 @@ var htmlTemplate2 = `
 
 </html>
 `;
-return htmlTemplate2;
+return htmlTemplate1,htmlTemplate2;
 }
 
 app.get('/', function (req, res) {
