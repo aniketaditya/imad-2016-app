@@ -189,7 +189,7 @@ app.get('/index.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/articles/:articleName',function (req,res) {
+app.get('/:articleName',function (req,res) {
     pool.query("SELECT * FROM article WHERE title = $1", [req.params.articleName], function(err,result) {
         if(err){
             res.status(500).send(err.toString());
