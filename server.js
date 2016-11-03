@@ -224,10 +224,6 @@ app.get('/contact.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'contact.html'));
 });
 
-app.get('/post1.html', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'post1.html'));
-});
-
 app.get('/css/my-blog.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui/css', 'my-blog.css'));
 });
