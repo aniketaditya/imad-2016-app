@@ -21,6 +21,7 @@ function createTemplate (data) {
     var author = data.author;
     var content = data.content;
     var htmlTemplate = `
+    <!DOCTYPE html>
     <html lang="en">
 
     <head>
