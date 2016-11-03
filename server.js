@@ -170,7 +170,7 @@ function createTemplate (data) {
     <script src="/js/contact_me.js"></script>
 
     <!-- Theme JavaScript -->
-    <script src="/js/my-blog.min.js"></script>
+    <script src="/js/my-blog.js"></script>
 
 </body>
 
