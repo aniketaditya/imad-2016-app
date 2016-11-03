@@ -184,8 +184,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/articles/:path', function (req, res) {
-    var path = req.params.path;
-    res.send(createTemplate(articles[path]));
+    res.send(req.params.path);
 });
 
 var pool = new Pool(config);
