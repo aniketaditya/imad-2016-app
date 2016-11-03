@@ -38,7 +38,7 @@ function createTemplate (data) {
     <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
 
     <!-- Theme CSS -->
-    <link href="css/my-blog.css" rel="stylesheet">
+    <link href="ui/style.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="vendor/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
