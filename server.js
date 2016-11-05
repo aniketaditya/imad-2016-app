@@ -370,15 +370,14 @@ app.get('/', function (req, res) {
             res.status(404).send('Article not found');
             } 
             else {
-                while(result.rows.id<=result.rows.length)
+                for(var i=0; i<result.rows.length;i++)
                 {
-            var articleData = result.rows[0];
+            var articleData = result.rows[i];
             res.send(createTemplate1(articleData));
                 }
             }
         }
     });
-});
 });
 
 app.get('/index.html', function (req, res) {
