@@ -202,8 +202,8 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/index.html', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+app.get('/index.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'index.js'));
 });
 
 app.get('/about.html', function (req, res) {
