@@ -31,11 +31,10 @@ var pool = new Pool(config);
             var subtitle = result.rows[i].subtitle;
             var date = result.rows[i].date;
             var author = result.rows[i].author;
-        }
+            }
+            }
     }
-}
-}
-});
+    });
 <html lang="en">
 <head>
 
