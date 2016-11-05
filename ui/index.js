@@ -1,40 +1,4 @@
-var express = require('express');
-var morgan = require('morgan');
-var path = require('path');
-var Pool = require('pg').Pool;
-var config = {
-    user : 'aniketaditya',
-    database : 'aniketaditya',
-    host : 'db.imad.hasura-app.io',
-    port : '5432',
-    password : process.env.DB_PASSWORD
-};
 
-var app = express();
-app.use(morgan('combined'));
-var path = require('path');
-
-app.use(express.static(__dirname + '/ui'));
-var pool = new Pool(config);
-    pool.query("SELECT * FROM article WHERE id<=4", function(err,result) {
-        if(err){
-            res.status(500).send(err.toString());
-    } else {
-        if(result.rows.length === 0)
-        {
-            res.status(404).send('Article not found');
-            } 
-            else {
-            for (var i=0; i<result.rows.length;i++)
-            {
-            var heading = result.rows[i].heading;
-            var subtitle = result.rows[i].subtitle;
-            var date = result.rows[i].date;
-            var author = result.rows[i].author;
-            }
-            }
-    }
-    });
 <html lang="en">
 <head>
 
