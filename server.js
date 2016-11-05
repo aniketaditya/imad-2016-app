@@ -356,7 +356,7 @@ function createTemplate1 (data) {
 
 </html>
 `;
-return htmlTemplate
+return htmlTemplate;
 }
 
 
