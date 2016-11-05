@@ -16,7 +16,7 @@ var path = require('path');
 
 app.use(express.static(__dirname + '/ui'));
 var pool = new Pool(config);
-    pool.query("SELECT * FROM article WHERE id===1", function(err,result) {
+    pool.query("SELECT * FROM article WHERE id<=4", function(err,result) {
         if(err){
             res.status(500).send(err.toString());
     } else {
