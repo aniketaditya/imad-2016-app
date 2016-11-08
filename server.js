@@ -214,10 +214,6 @@ app.get('/contact.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'contact.html'));
 });
 
-app.get('/post1.html', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'post1.html'));
-});
-
 app.get('/css/my-blog.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui/css', 'my-blog.css'));
 });
@@ -293,7 +289,7 @@ app.get('/vendor/font-awesome/fonts/fontawesome-webfont.ttf', function (req, res
 app.get('/vendor/font-awesome/fonts/fontawesome-webfont.woff', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui/vendor/font-awesome/fonts' , 'fontawesome-webfont.woff'));
 });
-  app.get('/vendor/font-awesome/fonts/fontawesome-webfont.woff', function (req, res) {
+  app.get('/vendor/font-awesome/fonts/fontawesome-webfont.woff2', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui/vendor/font-awesome/fonts' , 'fontawesome-webfont.woff2'));
 });
 
