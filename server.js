@@ -132,7 +132,16 @@ function createTemplate (data) {
         </div>
     </article>
 
-    <hr>
+    <hr/>
+    
+              <h4>Comments</h4>
+              <div id="comment_form">
+              </div>
+              <div id="comments">
+                <center>Loading comments...</center>
+              </div>
+          </div>
+
 
     <!-- Footer -->
     <footer>
@@ -170,6 +179,8 @@ function createTemplate (data) {
             </div>
         </div>
     </footer>
+    
+    <script type="text/javascript" src="/ui/article.js"></script>
 
     <!-- jQuery -->
     <script src="/vendor/jquery/jquery.js"></script>
