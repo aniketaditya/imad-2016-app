@@ -180,7 +180,7 @@ function createTemplate (data) {
         </div>
     </footer>
     
-    <script type="text/javascript" src="/ui/article.js"></script>
+    <script type="text/javascript" src="article.js"></script>
 
     <!-- jQuery -->
     <script src="/vendor/jquery/jquery.js"></script>
