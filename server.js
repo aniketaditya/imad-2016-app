@@ -362,26 +362,7 @@ app.get('/:articleName',function (req,res) {
 });
 
 app.get('/', function (req, res) {
-  pool.query("SELECT * FROM article",function(err,result) {
-        if(err){
-            res.status(500).send(err.toString());
-    } else {
-        if(result.rows.length === 0)
-        {
-            res.status(404).send('Article not found');
-            } 
-            else {
-                for(var i =0; i<result.rows.length;i++)
-                {
-            var heading = result.rows[i].heading;
-            var subtitle = result.rows[i].subtitle;
-            var author = result.rows[i].author;
-            var date = result.rows[i].date;
-            res.render('index',{heading,subtitle,author,date});
-                }
-            }
-    }
- });
+  res.sendFile(path.join(__dirname, 'ui','index.html'));
 });
 
 app.get('/ui/:fileName', function (req, res) {
