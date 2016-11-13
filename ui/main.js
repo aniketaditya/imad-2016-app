@@ -1,29 +1,11 @@
 function loadLoginForm () {
     var loginHtml = `<h3>Login/Register Here for Posting Comments on the Articles!</h3>
-             <form name="login/register" id="login/register">
-                    <div class="row control-group">
-                        <div class="form-group col-xs-12 floating-label-form-group controls">
-                            <label>Name</label>
-                            <input type="text" class="form-control" placeholder="Name" id="username">
-                            <p class="help-block text-danger"></p>
-                        </div>
-                    </div>
-                    <div class="row control-group">
-                        <div class="form-group col-xs-12 floating-label-form-group controls">
-                            <label>Password</label>
-                            <input type="password" class="form-control" placeholder="Password" id="password">
-                            <p class="help-block text-danger"></p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="form-group col-xs-12">
-                            <button type="submit" class="btn btn-default" id="login_btn">Login</button>
-                        </div>
-                        <div class="row">
-                        <div class="form-group col-xs-12">
-                            <button type="submit" class="btn btn-default" id="register_btn">Register</button>
-                        </div>
-                        </form>
+                      <h3>Login/Register Here for Posting Comments on the Articles!</h3>
+        <input type="text" id="username" placeholder="username" /><br/><br/>
+        <input type="password" id="password" />
+        <br/><br/>
+        <input type="submit" id="login_btn" value="Login" />
+        <input type="submit" id="register_btn" value="Register" />
 
         `;
         
