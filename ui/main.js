@@ -1,5 +1,6 @@
 function loadLoginForm () {
-    var loginHtml = `<div class="row control-group">
+    var loginHtml = `<h3>Login/Register Here for Posting Comments on the Articles!</h3>
+                    <div class="row control-group">
                         <div class="form-group col-xs-12 floating-label-form-group controls">
                             <label>Username</label>
                             <input type="text" class="form-control" placeholder="Username" id="username"/>
@@ -20,7 +21,7 @@ function loadLoginForm () {
                         </div>
                     </div>
         `;
-        
+             
         
     document.getElementById('login_area').innerHTML = loginHtml;
     
