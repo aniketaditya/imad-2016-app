@@ -4,14 +4,14 @@ function loadLoginForm () {
                     <div class="row control-group">
                         <div class="form-group col-xs-12 floating-label-form-group controls">
                             <label>Name</label>
-                            <input type="text" class="form-control" placeholder="Name" id="username" required data-validation-required-message="Please enter your username.">
+                            <input type="text" class="form-control" placeholder="Name" id="username">
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
                     <div class="row control-group">
                         <div class="form-group col-xs-12 floating-label-form-group controls">
                             <label>Password</label>
-                            <input type="text" class="form-control" placeholder="Password" id="password" required data-validation-required-message="Please enter Password">
+                            <input type="password" class="form-control" placeholder="Password" id="passwor">
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
