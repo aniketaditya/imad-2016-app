@@ -1,5 +1,6 @@
 function loadLoginForm () {
-    var loginHtml = `<form name="login/register" id="login/register" novalidate>
+    var loginHtml = `<h3>Login/Register Here for Posting Comments on the Articles!</h3>
+             <form name="login/register" id="login/register" novalidate>
                     <div class="row control-group">
                         <div class="form-group col-xs-12 floating-label-form-group controls">
                             <label>Name</label>
@@ -14,6 +15,15 @@ function loadLoginForm () {
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="form-group col-xs-12">
+                            <button type="submit" class="btn btn-default" id="login_btn">Login</button>
+                        </div>
+                        <div class="row">
+                        <div class="form-group col-xs-12">
+                            <button type="submit" class="btn btn-default" id="register_btn">Register</button>
+                        </div>
+                        </form>
 
         `;
         
