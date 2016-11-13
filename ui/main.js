@@ -112,14 +112,14 @@ function loadArticles () {
         if (request.readyState === XMLHttpRequest.DONE) {
             var articles = document.getElementById('articles');
             if (request.status === 200) {
-                var content = '<div>';
+                var content = '<ul>';
                 var articleData = JSON.parse(this.responseText);
                 for (var i=0; i< articleData.length; i++) {
-                    content += `<div class="post-preview">
-                    <a href="/${articleData[i].title}"><h2 class="post-title">${articleData[i].heading<h2>}</a>
-                    (${articleData[i].date.split('T')[0]})</div>`;
+                    content += `<li>
+                    <a href="/articles/${articleData[i].title}">${articleData[i].heading}</a>
+                    (${articleData[i].date.split('T')[0]})</li>`;
                 }
-                content += "</div>"
+                content += "</ul>"
                 articles.innerHTML = content;
             } else {
                 articles.innerHTML('Oops! Could not load all articles!')
