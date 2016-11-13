@@ -1,139 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
 
-function loadLoginForm () {
-    var loginHtml = `
-        <h3>Login/Register to unlock awesome features</h3>
-        <input type="text" id="username" placeholder="username" />
-        <input type="password" id="password" />
-        <br/><br/>
-        <input type="submit" id="login_btn" value="Login" />
-        <input type="submit" id="register_btn" value="Register" />
-        `;
-    document.getElementById('login_area').innerHTML = loginHtml;
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>My Blog</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="css/my-blog.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="index.html">My Blog</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="article-one">Sample Post</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header class="intro-header" style="background-image: url('img/home-bg.jpg')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="site-heading">
+                        <h1>My Blog</h1>
+                        <hr class="small">
+                        <span class="subheading">A Clean Blog By Aniket Aditya</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-preview">
+                    <a href="article-one">
+                        <h2 class="post-title">
+                            Article 1 Title
+                        </h2>
+                        <h3 class="post-subtitle">
+                            Article 1 subtitle
+                        </h3>
+                    </a>
+                    <p class="post-meta">Posted by <a href='about.html'>Aniket Aditya</a> on Thu Nov 03 2016</p>
+                </div>
+                <hr>
+                <div class="post-preview">
+                    <a href="article-two">
+                        <h2 class="post-title">
+                            Article 2 Title
+                        </h2>
+                        <h3 class="post-subtitle">
+                            Article 2 subtitle
+                        </h3>
+                    </a>
+                    <p class="post-meta">Posted by <a href="about.html">Aniket Aditya</a> on Fri Nov 04 2016</p>
+                </div>
+                <hr>
+                <div class="post-preview">
+                    <a href="article-three">
+                        <h2 class="post-title">
+                            Article 3 Title
+                        </h2>
+                        <h3 class="post-subtitle">
+                            Article 3 subtitle
+                        </h3>
+                    </a>
+                    <p class="post-meta">Posted by <a href="about.html">Aniket Aditya</a> Fri Nov 04 2016</p>
+                </div>
+                <hr>
+                <div class="post-preview">
+                    <a href="article-four">
+                        <h2 class="post-title">
+                            Article 4 Title
+                        </h2>
+                        <h3 class="post-subtitle">
+                            Article 4 subtitle
+                        </h3>
+                    </a>
+                    <p class="post-meta">Posted by <a href="#">Author</a> on Date</p>
+                    <hr>
+                <div class="post-preview">
+                    <a href="article-five">
+                        <h2 class="post-title">
+                            Article 5 Title
+                        </h2>
+                        <h3 class="post-subtitle">
+                            Article 5 subtitle
+                        </h3>
+                    </a>
+                    <p class="post-meta">Posted by <a href="#">Author</a> on Date</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
     
-    // Submit username/password to login
-    var submit = document.getElementById('login_btn');
-    submit.onclick = function () {
-        // Create a request object
-        var request = new XMLHttpRequest();
-        
-        // Capture the response and store it in a variable
-        request.onreadystatechange = function () {
-          if (request.readyState === XMLHttpRequest.DONE) {
-              // Take some action
-              if (request.status === 200) {
-                  submit.value = 'Sucess!';
-              } else if (request.status === 403) {
-                  submit.value = 'Invalid credentials. Try again?';
-              } else if (request.status === 500) {
-                  alert('Something went wrong on the server');
-                  submit.value = 'Login';
-              } else {
-                  alert('Something went wrong on the server');
-                  submit.value = 'Login';
-              }
-              loadLogin();
-          }  
-          // Not done yet
-        };
-        
-        // Make the request
-        var username = document.getElementById('username').value;
-        var password = document.getElementById('password').value;
-        console.log(username);
-        console.log(password);
-        request.open('POST', '/login', true);
-        request.setRequestHeader('Content-Type', 'application/json');
-        request.send(JSON.stringify({username: username, password: password}));  
-        submit.value = 'Logging in...';
-        
-    };
-    
-    var register = document.getElementById('register_btn');
-    register.onclick = function () {
-        // Create a request object
-        var request = new XMLHttpRequest();
-        
-        // Capture the response and store it in a variable
-        request.onreadystatechange = function () {
-          if (request.readyState === XMLHttpRequest.DONE) {
-              // Take some action
-              if (request.status === 200) {
-                  alert('User created successfully');
-                  register.value = 'Registered!';
-              } else {
-                  alert('Could not register the user');
-                  register.value = 'Register';
-              }
-          }
-        };
-        
-        // Make the request
-        var username = document.getElementById('username').value;
-        var password = document.getElementById('password').value;
-        console.log(username);
-        console.log(password);
-        request.open('POST', '/create-user', true);
-        request.setRequestHeader('Content-Type', 'application/json');
-        request.send(JSON.stringify({username: username, password: password}));  
-        register.value = 'Registering...';
-    
-    };
-}
+    <div id="login_area">
+                <center>Loading login status...</center>
+            </div>
+            <hr/>
+            <h3>My Articles</h3>
+            <div id="articles">
+                <center>Loading articles...</center>
+            </div>
+            <div class="footer">
+            </div>
+        </div>
 
-function loadLoggedInUser (username) {
-    var loginArea = document.getElementById('login_area');
-    loginArea.innerHTML = `
-        <h3> Hi <i>${username}</i></h3>
-        <a href="/logout">Logout</a>
-    `;
-}
+    <hr>
 
-function loadLogin () {
-    // Check if the user is already logged in
-    var request = new XMLHttpRequest();
-    request.onreadystatechange = function () {
-        if (request.readyState === XMLHttpRequest.DONE) {
-            if (request.status === 200) {
-                loadLoggedInUser(this.responseText);
-            } else {
-                loadLoginForm();
-            }
-        }
-    };
-    
-    request.open('GET', '/check-login', true);
-    request.send(null);
-}
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <ul class="list-inline text-center">
+                        <li>
+                            <a href="https://twitter.com/aniket_aditya">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/aniket.aditya">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/aniketaditya">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted">Copyright &copy; Aniket Aditya 2016</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-function loadArticles () {
-        // Check if the user is already logged in
-    var request = new XMLHttpRequest();
-    request.onreadystatechange = function () {
-        if (request.readyState === XMLHttpRequest.DONE) {
-            var articles = document.getElementById('articles');
-            if (request.status === 200) {
-                var content = '<ul>';
-                var articleData = JSON.parse(this.responseText);
-                for (var i=0; i< articleData.length; i++) {
-                    content += `<li>
-                    <a href="/articles/${articleData[i].title}">${articleData[i].heading}</a>
-                    (${articleData[i].date.split('T')[0]})</li>`;
-                }
-                content += "</ul>"
-                articles.innerHTML = content;
-            } else {
-                articles.innerHTML('Oops! Could not load all articles!')
-            }
-        }
-    };
-    
-    request.open('GET', '/get-articles', true);
-    request.send(null);
-}
+        <script type="text/javascript" src="main.js">
+        </script>
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.js"></script>
 
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.js"></script>
 
-// The first thing to do is to check if the user is logged in!
-loadLogin();
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
 
-// Now this is something that we could have directly done on the server-side using templating too!
-loadArticles();
+    <!-- Theme JavaScript -->
+    <script src="js/my-blog.js"></script>
+
+</body>
+
+</html>
