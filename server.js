@@ -538,7 +538,7 @@ app.get('/', function (req, res) {
                 for(var i=0;i<result.rows.length;i++)
                 {
             var articleData = result.rows[0];
-            res.send(createTemplate(articleData));
+            res.send(homepageArticles(articleData));
                 }
             }
         }
