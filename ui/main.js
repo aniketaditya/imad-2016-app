@@ -3,8 +3,8 @@ function loadLoginForm () {
         <input type="text" class="form-control" id="username" placeholder="Enter Your Username" /><br/>
         <input type="password" class="form-control" id="password" placeholder="Password" />
         <br/>
-        <input type="submit" id="login_btn" value="Login" />
-        <input type="submit" id="register_btn" value="Register" />
+        <input type="submit" class="btn btn-default" id="login_btn" value="Login" />
+        <input type="submit" class="btn btn-default" id="register_btn" value="Register" />
         `;
              
         
