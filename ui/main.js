@@ -11,7 +11,7 @@ function loadLoginForm () {
                     <div class="row control-group">
                         <div class="form-group col-xs-12 floating-label-form-group controls">
                             <label>Password</label>
-                            <input type="password" class="form-control" placeholder="Password" id="passwor">
+                            <input type="password" class="form-control" placeholder="Password" id="password">
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
