@@ -17,6 +17,29 @@ var config = {
 var app = express();
 app.use(morgan('combined'));
 var path = require('path');
+app.engine('.html', require('ejs').__express);
+app.set('views', __dirname + '/ui');
+app.set('view engine', 'html');
+
+ pool.query("SELECT * FROM article",function(err,result) {
+        if(err){
+            res.status(500).send(err.toString());
+    } else {
+        if(result.rows.length === 0)
+        {
+            res.status(404).send('Article not found');
+            } 
+            else {
+                for(var i =0; i<result.rows.length;i++)
+                {
+            var heading = result.rows[i].heading;
+            var subtitle = result.rows[i].subtitle;
+            var author = result.rows[i].author;
+            var date = result.rows[i].date;
+                }
+            }
+    }
+ });
 
 app.use(bodyParser.json());
 
