@@ -1,6 +1,6 @@
 function loadLoginForm () {
     var loginHtml = `<h3>Login/Register Here for Posting Comments on the Articles!</h3>
-             <form name="login/register" id="login/register" novalidate>
+             <form name="login/register" id="login/register">
                     <div class="row control-group">
                         <div class="form-group col-xs-12 floating-label-form-group controls">
                             <label>Name</label>
