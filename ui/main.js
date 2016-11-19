@@ -142,6 +142,7 @@ function loadArticles () {
                 </div>
                 </div>
                 </div>`;
+                 articles.innerHTML = content;
                 }
                articles.innerHTML = content;
             } else {
