@@ -141,8 +141,9 @@ function loadArticles () {
                 </div>
                 </div>
                 </div>`;
+                 articles.innerHTML += content;
                 }
-                articles.innerHTML = content;
+              
             } else {
                 articles.innerHTML('Oops! Could not load all articles!')
             }
