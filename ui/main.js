@@ -136,7 +136,7 @@ function loadArticles () {
                                      ${articleData[i].subtitle}
                                  </h3>
                                 </a>
-                    <p class="post-meta">Posted by <a href="/about.html">${articleData[i].author}</a> on ${articleData[i].date.toDateString()}</p>
+                    <p class="post-meta">Posted by <a href="/about.html">${articleData[i].author}</a> on (${articleData[i].date.split('T')[0]})}</p>
                 </div>
                 </div>
                 </div>`;
