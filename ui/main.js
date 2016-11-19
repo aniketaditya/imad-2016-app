@@ -123,8 +123,9 @@ function loadArticles () {
             var articles = document.getElementById('articles');
             if (request.status === 200) {
                 var articleData = JSON.parse(this.responseText);
+                var content = '';
                 for (var i=0; i< articleData.length; i++) {
-                    var content = `<div class="container">
+                     content = `<div class="container">
                                 <div class="row">
                                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                                <div class="post-preview">
@@ -141,9 +142,8 @@ function loadArticles () {
                 </div>
                 </div>
                 </div>`;
-                 articles.innerHTML += content;
                 }
-              
+               articles.innerHTML = content;
             } else {
                 articles.innerHTML('Oops! Could not load all articles!')
             }
