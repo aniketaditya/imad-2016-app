@@ -124,7 +124,7 @@ function loadArticles () {
             if (request.status === 200) {
                 var articleData = JSON.parse(this.responseText);
                 for (var i=0; i< articleData.length; i++) {
-                    var content = `'<div class="container">
+                    var content = `<div class="container">
                                 <div class="row">
                                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                                <div class="post-preview">
@@ -137,7 +137,7 @@ function loadArticles () {
                                  </h3>
                                 </a>
                     <p class="post-meta">Posted by <a href="#">${articleData[i].author}</a> on Date</p>
-                </div>';`
+                </div>;`
                 }
                 articles.innerHTML = content;
             } else {
