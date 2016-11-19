@@ -137,8 +137,7 @@ function loadArticles () {
                                  </h3>
                                 </a>
                     <p class="post-meta">Posted by <a href="#">${articleData[i].author}</a> on Date</p>
-                </div>
-                <hr>';`
+                </div>';`
                 }
                 articles.innerHTML = content;
             } else {
