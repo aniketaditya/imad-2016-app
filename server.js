@@ -5,6 +5,7 @@ var Pool = require('pg').Pool;
 var crypto = require('crypto');
 var bodyParser = require('body-parser');
 var session = require('express-session');
+var nodemailer = require('nodemailer');
 
 var config = {
     user : 'aniketaditya',
@@ -28,6 +29,22 @@ app.use(session({
     secret: 'someRandomSecretValue',
     cookie: { maxAge: 1000 * 60 * 60 * 24 * 30}
 }));
+
+  //mailer
+  var router = express.Router();
+app.use('/sayHello', router);
+router.post('/', handleSayHello); // handle the route at yourdomain.com/sayHello
+
+function handleSayHello(req, res) {
+    // Not the movie transporter!
+    var transporter = nodemailer.createTransport({
+        service: 'Gmail',
+        auth: {
+            user: 'aniket.aditya@gmail.com', // Your email id
+            pass: 'password' // Your password
+        }
+    });
+}
 
 
 function createTemplate (data) {
