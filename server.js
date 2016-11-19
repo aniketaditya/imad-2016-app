@@ -128,22 +128,19 @@ function createTemplate (data) {
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <p>${content}</p>
-                </div>
-            </div>
-        </div>
-    </article>
-
-    <hr/>
-    
-              <h4>Comments</h4>
+                    <hr?
+                     <h4>Comments</h4>
               <div id="comment_form">
               </div>
               <div id="comments">
                 <center>Loading comments...</center>
               </div>
           </div>
-
-
+                </div>
+            </div>
+        </div>
+    </article>
+    
     <!-- Footer -->
     <footer>
         <div class="container">
