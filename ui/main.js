@@ -139,7 +139,7 @@ function loadArticles () {
                     <p class="post-meta">Posted by <a href="#">${articleData[i].author}</a> on Date</p>
                 </div>`;
                 }
-                articles.innerHTML = content.appendChild(content);
+                articles.innerHTML = content;
             } else {
                 articles.innerHTML('Oops! Could not load all articles!')
             }
