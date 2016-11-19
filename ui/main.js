@@ -127,7 +127,6 @@ function loadArticles () {
                 for (var i=0; i< articleData.length; i++) {
                      content += `<div class="container">
                                 <div class="row">
-                               
                                <div class="post-preview">
                                 <a href="/${articleData[i].title}">
                                 <h2 class="post-title">
@@ -137,8 +136,7 @@ function loadArticles () {
                                      ${articleData[i].subtitle}
                                  </h3>
                                 </a>
-                    <p class="post-meta">Posted by <a href="#">${articleData[i].author}</a> on Date</p>
-            
+                    <p class="post-meta">Posted by <a href="#">${articleData[i].author}</a> on ${articleData[i].date.toDateString()}</p>
                 </div>
                 </div>
                 </div>`;
