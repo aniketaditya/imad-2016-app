@@ -21,8 +21,6 @@ var path = require('path');
 
 app.use(express.static(__dirname + '/ui'));
 
-app.set('view engine', 'ejs');
-
 app.use(bodyParser.json());
 
 app.use(session({
