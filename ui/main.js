@@ -126,7 +126,7 @@ function loadArticles () {
                 var articleData = JSON.parse(this.responseText);
                 for (var i=0; i< articleData.length; i++) {
                     content += `<li>
-                    <a href="/${articleData[i].title}">${articleData[i].heading}</a> Posetd by ${articleData[i].author} on (${articleData[i].date.split('T')[0]})</li>`;
+                    <a href="/${articleData[i].title}">${articleData[i].heading}</a> Posetd by ${articleData[i].author} on ${articleData[i].date.toDateString()}</li>`;
                 }
                 content += "</ul>"
                 articles.innerHTML = content;
