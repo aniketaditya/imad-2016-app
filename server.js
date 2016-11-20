@@ -48,6 +48,7 @@ function createTemplate (data) {
 
     <title>
     ${title}
+     <link rel="icon" href="favicon.ico" type="image/x-icon">
     </title>
 
     <!-- Bootstrap Core CSS -->
@@ -129,7 +130,7 @@ function createTemplate (data) {
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <p>${content}</p>
                     <hr?
-                     <h4>Comments</h4>
+                     <h2>Comments</h2>
               <div id="comment_form">
               </div>
               <div id="comments">
