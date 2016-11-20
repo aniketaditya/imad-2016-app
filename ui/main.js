@@ -114,6 +114,11 @@ function loadLogin () {
     request.open('GET', '/check-login', true);
     request.send(null);
 }
+//counter
+var counter = 0;
+counter = counter+1;
+var span = document.getElementById('count');
+span.innerHTML = counter.toString();
 
 function loadArticles () {
         // Check if the user is already logged in
