@@ -114,11 +114,21 @@ function loadLogin () {
     request.open('GET', '/check-login', true);
     request.send(null);
 }
-//counter
-var counter = 0;
-counter = counter + 1;
-var span = document.getElementById('count');
-span.innerHTML = counter.toString();
+//site visit counter
+function getCounter(){
+var request = new XMLHttpRequest();
+request.onreadystatechange = function() {
+    if(request.readyState === XMLHttpRequest.DONE) {
+        if (request.status === 200) {
+            var counter = request.responseText;
+            var span = document.getElementById('count');
+            span.innerHTML = counter.toString();
+        }
+    }
+};
+ request.open('GET', '/counter', true);
+    request.send(null);
+}
 
 function loadArticles () {
         // Check if the user is already logged in
@@ -157,7 +167,7 @@ function loadArticles () {
     request.send(null);
 }
 
-
+getCounter();
 // The first thing to do is to check if the user is logged in!
 loadLogin();
 
