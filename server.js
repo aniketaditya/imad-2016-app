@@ -339,6 +339,12 @@ app.post('/submit-comment/:articleName', function (req, res) {
     }
 });
 
+var counter = 0;
+app.get('/counter',function(req,res){
+    counter = counter+1;
+   res.send(counter.toString()); 
+});
+
 app.get('/:articleName',function (req,res) {
     pool.query("SELECT * FROM article WHERE title = $1", [req.params.articleName], function(err,result) {
         if(err){
@@ -354,12 +360,6 @@ app.get('/:articleName',function (req,res) {
             }
         }
     });
-});
-
-var counter = 0;
-app.get('/counter',function(req,res){
-    counter = counter+1;
-   res.send(counter.toString()); 
 });
 
 app.get('/', function (req, res) {
