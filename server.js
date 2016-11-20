@@ -447,7 +447,7 @@ app.get('/img/contact_me.jpg', function (req, res) {
 
 app.get('/img/html5.1.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui/img', 'html5.1.jpg'));
-
+});
 app.get('/vendor/bootstrap/fonts/glyphicons-halflings-regular.ttf', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui/vendor/bootstrap/fonts/', 'glyphicons-halflings.ttf'));
 });
