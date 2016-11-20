@@ -48,7 +48,6 @@ function createTemplate (data) {
 
     <title>
     ${title}
-     <link rel="icon" href="favicon.ico" type="image/x-icon">
     </title>
 
     <!-- Bootstrap Core CSS -->
