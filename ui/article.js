@@ -6,11 +6,11 @@ function loadCommentForm () {
         <div class="row control-group">
             <div class="form-group col-xs-12 floating-label-form-group controls">
               <label>Write your Comment</label>
-        <textarea id="comment_text" rows="5" cols="100" placeholder="Enter your comment here..."></textarea>
+        <textarea id="comment_text" rows="5" cols="100" placeholder="Enter your comment here..." required></textarea>
         </div>
         </div>
         <br/>
-        <input type="submit" id="submit" value="Submit" />
+        <input type="submit" class="btn btn-default" id="submit" value="Submit" />
         <br/>
         `;
     document.getElementById('comment_form').innerHTML = commentFormHtml;
