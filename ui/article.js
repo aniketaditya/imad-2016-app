@@ -5,7 +5,8 @@ function loadCommentForm () {
         <div class="row control-group">
             <div class="form-group col-xs-12 floating-label-form-group controls">
               <label>Write your Comment</label>
-        <textarea id="comment_text" rows="4" cols="80" placeholder="Enter your comment here..." required="required"></textarea>
+        <textarea id="comment_text" rows="4" cols="80" placeholder="Enter your comment here..." required data-validation-required-message="Please enter your name.>
+        </textarea>
         </div>
         </div>
         <br/>
