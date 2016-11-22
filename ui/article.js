@@ -38,6 +38,10 @@ function loadCommentForm () {
         
         // Make the request
         var comment = document.getElementById('comment_text').value;
+                    if (comments ==='') {
+        alert("Comments field can't be left empty");
+        return;
+    }
         request.open('POST', '/submit-comment/' + currentArticleTitle, true);
         request.setRequestHeader('Content-Type', 'application/json');
         request.send(JSON.stringify({comment: comment}));  
@@ -75,10 +79,6 @@ function loadComments () {
     request.onreadystatechange = function () {
         if (request.readyState === XMLHttpRequest.DONE) {
             var comments = document.getElementById('comments');
-             if (comments ==='') {
-        alert("Comments field can't be left empty");
-        return;
-    }
             if (request.status === 200) {
                 var content = '';
                 var commentsData = JSON.parse(this.responseText);
