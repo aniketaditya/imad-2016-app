@@ -38,7 +38,7 @@ function loadCommentForm () {
         
         // Make the request
         var comment = document.getElementById('comment_text').value;
-                    if ('comment_text' ==='') {
+                    if (comment ==='') {
         alert("Comments field can't be left empty");
         return;
     }
