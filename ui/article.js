@@ -75,6 +75,10 @@ function loadComments () {
     request.onreadystatechange = function () {
         if (request.readyState === XMLHttpRequest.DONE) {
             var comments = document.getElementById('comments');
+             if (comments ==='') {
+        alert("Comments field can't be left empty");
+        return;
+    }
             if (request.status === 200) {
                 var content = '';
                 var commentsData = JSON.parse(this.responseText);
