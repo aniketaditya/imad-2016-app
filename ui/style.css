@@ -377,6 +377,16 @@ form .row:first-child .floating-label-form-group {
   background-color: #333333;
   cursor: not-allowed;
 }
+.comment {
+    margin-left: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.commenter {
+    font-style: italic;
+    font-size: 0.8em;
+}
 ::-moz-selection {
   color: white;
   text-shadow: none;
