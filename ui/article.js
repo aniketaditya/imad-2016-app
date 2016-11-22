@@ -87,7 +87,7 @@ function loadComments () {
                     content += `<div class="comment">
                         <p style="color:#550C73">${escapeHTML(commentsData[i].comment)}</p>
                         <div class="commenter">
-                            <div style='color:#04d99d;font-weight:bold'>${escapeHTML(commentsData[i].username)}</div> - ${time.toLocaleTimeString()} on ${time.toLocaleDateString()}
+                            <div style='color:#04d99d;font-weight:bold;font-variant: small-caps'>${escapeHTML(commentsData[i].username)}</div> - ${time.toLocaleTimeString()} on ${time.toLocaleDateString()}
                         </div>
                     </div>`;
                 }
