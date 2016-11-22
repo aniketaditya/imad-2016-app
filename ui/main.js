@@ -1,6 +1,7 @@
 function loadLoginForm () {
          var loginHtml = ` <h3>Login/Register Here for Posting Comments on the Articles!</h3>
         <div class="row control-group">
+        <form>
             <div class="form-group col-xs-12 floating-label-form-group controls">
               <label>Username</label>
                 <input type="text" class="form-control" id="username" placeholder="Enter Your Username" required>
@@ -15,6 +16,7 @@ function loadLoginForm () {
         <br/>
         <input type="submit" class="btn btn-default" id="login_btn" value="Login" />
         <input type="submit" class="btn btn-default" id="register_btn" value="Register" />
+        </form>
         `;
              
         
@@ -49,11 +51,6 @@ function loadLoginForm () {
         // Make the request
         var username = document.getElementById('username').value;
         var password = document.getElementById('password').value;
-        `if (username == '' || password == '') {
-        // Inform the user on the screen through some message or give him a alert message
-        alert("Username/Password field can't be left empty");
-        return;
-    }`;
         request.open('POST', '/login', true);
         request.setRequestHeader('Content-Type', 'application/json');
         request.send(JSON.stringify({username: username, password: password}));  
