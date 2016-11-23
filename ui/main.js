@@ -94,10 +94,18 @@ function loadLoginForm () {
     };
 }
 
+function escapeHTML (text)
+{
+    var $text = document.createTextNode(text);
+    var $div = document.createElement('div');
+    $div.appendChild($text);
+    return $div.innerHTML;
+}
+
 function loadLoggedInUser (username) {
     var loginArea = document.getElementById('login_area');
     loginArea.innerHTML = `
-        <h3> Hi <i>${username.toUpperCase()}</i></h3>
+        <h3> Hi <i>${escapeHTML(username.toUpperCase())}</i></h3>
         <a href="/logout">Logout</a>
     `;
 }
