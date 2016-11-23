@@ -144,13 +144,6 @@ request.onreadystatechange = function() {
     request.send(null);
 }
 
-$.get('/logout', function(response){
-  if(response == '1'){
-    alert('Successfully logged out!');
-    // Destroy DOM objects that should not be still available.
-  }
-});
-
 function loadArticles () {
         // Check if the user is already logged in
     var request = new XMLHttpRequest();
@@ -179,7 +172,7 @@ function loadArticles () {
                 }
                articles.innerHTML = content;
             } else {
-                articles.innerHTML('Oops! Could not load all articles!')
+                articles.innerHTML('Oops! Could not load all articles!');
             }
         }
     };
