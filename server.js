@@ -279,7 +279,7 @@ app.get('/check-login', function (req, res) {
 
 app.get('/logout', function (req, res) {
    delete req.session.auth;
-   res.status(200).redirect('/').alert('You have been successfully logged out!');
+   res.status(200).redirect('/?msg=session%20destroyed');
 });
 
 var pool = new Pool(config);
