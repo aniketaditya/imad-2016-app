@@ -277,15 +277,10 @@ app.get('/check-login', function (req, res) {
    }
 });
 
-/*app.get('/logout', function (req, res) {
+app.get('/logout', function (req, res) {
    delete req.session.auth;
    res.status(200).redirect('/').alert('You have been successfully logged out!');
-});*/
- app.get('/logout', function(req, res) {
-      delete req.session.auth;
-      req.flash('message', 'You have been successfully logged out!')
-      res.redirect('/');
- });
+});
 
 var pool = new Pool(config);
 
