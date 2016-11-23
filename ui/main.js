@@ -15,6 +15,11 @@ function loadLoginForm () {
         <br/>
         <input type="submit" class="btn btn-default" id="login_btn" value="Login" />
         <input type="submit" class="btn btn-default" id="register_btn" value="Register" />
+        <div>
+    <%if(message){%>
+        <%= message%>
+    <% } %>
+</div>
         `;
              
         
