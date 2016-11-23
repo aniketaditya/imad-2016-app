@@ -127,21 +127,21 @@ function loadLogin () {
     request.send(null);
 }
 
-function logout () {
+function logoutMessage() {
     var loginArea = document.getElementById('login_area');
     loginArea.innerHTML = `
       <p>You have been successfully logged out! Login again to continue.</p>`;
 }
 
-function loadLogin () {
+function logout () {
     // Check if the user is already logged in
     var request = new XMLHttpRequest();
     request.onreadystatechange = function () {
         if (request.readyState === XMLHttpRequest.DONE) {
             if (request.status === 200) {
-                logout();
+                logoutMessage();
             } else {
-                loadLoggedInUser(this.responseText);
+                loadLogin();
             }
         }
     };
@@ -207,6 +207,7 @@ function loadArticles () {
 getCounter();
 // The first thing to do is to check if the user is logged in!
 loadLogin();
+logout();
 
 // Now this is something that we could have directly done on the server-side using templating too!
 loadArticles();
