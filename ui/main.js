@@ -110,6 +110,12 @@ function loadLoggedInUser (username) {
     `;
 }
 
+function logout () {
+    var loginArea = document.getElementById('login_area');
+    loginArea.innerHTML = `
+      <p>You have been successfully logged out! Login again to continue.</p>`;
+}
+
 function loadLogin () {
     // Check if the user is already logged in
     var request = new XMLHttpRequest();
@@ -119,6 +125,7 @@ function loadLogin () {
                 loadLoggedInUser(this.responseText);
             } else {
                 loadLoginForm();
+                logout();
             }
         }
     };
