@@ -16,6 +16,12 @@ function loadLoginForm () {
         <input type="submit" class="btn btn-default" id="login_btn" value="Login" />
         <input type="submit" class="btn btn-default" id="register_btn" value="Register" />
         `;
+        $.get('/logout', function(response){
+  if(response == '1'){
+    alert('Successfully logged out!');
+    // Destroy DOM objects that should not be still available.
+  }
+});
              
         
     document.getElementById('login_area').innerHTML = loginHtml;
