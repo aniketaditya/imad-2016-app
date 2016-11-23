@@ -277,9 +277,14 @@ app.get('/check-login', function (req, res) {
    }
 });
 
-app.get('/logout', function (req, res) {
+/*app.get('/logout', function (req, res) {
    delete req.session.auth;
    res.status(200).redirect('/?msg=logged%20out');
+});*/
+
+app.get('/logout', function (req, res) {
+  delete req.session.auth;
+  res.status(200).send('1');
 });
 
 var pool = new Pool(config);
